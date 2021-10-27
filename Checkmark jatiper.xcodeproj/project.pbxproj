@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F01C3C4A27286609002AA7FE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F01C3C4927286609002AA7FE /* Kingfisher */; };
 		F08BA5D12727B3CA00FADAAB /* Checkmark_jatiperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08BA5D02727B3CA00FADAAB /* Checkmark_jatiperApp.swift */; };
 		F08BA5D32727B3CA00FADAAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08BA5D22727B3CA00FADAAB /* ContentView.swift */; };
 		F08BA5D52727B3CB00FADAAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F08BA5D42727B3CB00FADAAB /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01C3C4A27286609002AA7FE /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "Checkmark jatiper";
+			packageProductDependencies = (
+				F01C3C4927286609002AA7FE /* Kingfisher */,
+			);
 			productName = "Checkmark jatiper";
 			productReference = F08BA5CD2727B3CA00FADAAB /* Checkmark jatiper.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = F08BA5C42727B3CA00FADAAB;
+			packageReferences = (
+				F01C3C4827286609002AA7FE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F08BA5CE2727B3CA00FADAAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F01C3C4827286609002AA7FE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F01C3C4927286609002AA7FE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F01C3C4827286609002AA7FE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F08BA5C52727B3CA00FADAAB /* Project object */;
 }
